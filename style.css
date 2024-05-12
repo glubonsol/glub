@@ -1,0 +1,164 @@
+body{
+    background-color: rgb(127, 142, 255);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    
+}
+
+.main{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+
+.first-section{
+    margin-top: 20px;
+    display: flex;
+    justify-content:space-around;
+}
+
+
+.glub{
+
+    height: 10%;
+    width: 10%;
+    border: 4px solid orangered;
+    border-radius: 50%;
+}
+
+.first-section h1{
+
+    color: orangered;
+    font-size: 3rem;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+.links{
+    display: flex;
+    justify-content: space-around;
+    color: orange;
+    font-family:Arial, Helvetica, sans-serif;
+    
+    justify-content: center;
+    align-items: center;
+
+}
+
+.links a{
+
+    color: orange;
+    width: min-content;
+    text-decoration: none;
+    font-size: 2rem;
+}
+
+  
+.second-section{
+
+    margin-top: 8%;
+    display: flex;
+    
+    align-items: center;
+    justify-content: center;
+}
+
+
+.ticker{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+
+
+
+.ticker img{
+    height: 60%;
+    width: 60%;
+    border: 10px solid yellow;
+}
+
+#ticker{
+
+    font-size: 5rem;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: orangered;
+    animation: tick 2s infinite;
+}
+
+
+@keyframes tick{
+
+     0%, 100% { font-size: 5rem; color: orangered; }
+     25%{color: rgb(0, 238, 255);}
+    50% { font-size: 7rem; color: yellow;}
+}
+
+
+
+.grid-container{
+
+    margin-top: 90px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+}
+
+
+#meme-grid{
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25%;
+    grid-template-rows: 25% 25% 25% 25%;
+    height: 80%;
+    width: 70%;
+}
+
+#meme-grid img{
+
+    height: 100%;
+    width: 100%;
+}
+
+
+.glub-glub{
+
+    font-family: Arial, Helvetica, sans-serif;
+    color: orange;
+    text-align: center;
+    font-size: 3rem;
+    animation: glubs 1s infinite;
+}
+
+
+@keyframes glubs{
+    
+    25% {
+        color: violet;
+    }
+
+    50%{
+        color: yellow;
+    }
+
+    75%{
+        color: green;
+    }
+}
+
+
+
+footer{
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    margin-top: 70px;
+}
